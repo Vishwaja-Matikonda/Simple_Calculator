@@ -1,14 +1,19 @@
 #Calculator using Tkinter
+
+#importing library functions
 from tkinter import *
 from math import *
 
+
 root=Tk()
 
-e=Entry(root,width=50,borderwidth=10)
+#creating a entry box
+e=Entry(root,width=50,borderwidth=10,justify="right")
 root.title("Simple Calculator")
 e.grid(row=0,column=0,columnspan=4,ipadx=10,ipady=15)
 
 #funtions of the buttons
+
 #button_click
 def button_click(number):
     cur=e.get()
@@ -175,7 +180,7 @@ button_sin=Button(root,text="sin",padx=25,pady=10,bg='#b8b894',fg='black',comman
 button_cos=Button(root,text="cos",padx=25,pady=10,bg='#b8b894',fg='black',command=button_cos)
 button_tan=Button(root,text="tan",padx=25,pady=10,bg='#b8b894',fg='black',command=button_tan)
 button_abs=Button(root,text="pow",padx=22,pady=10,bg='#b8b894',fg='black',command=button_abs)
-button_equal=Button(root,text="=",padx=30,pady=29,bg='red',fg='black',command=button_equal)
+button_equal=Button(root,text="=",padx=30,pady=31,bg='red',fg='black',command=button_equal)
 button_sqrt=Button(root,text="sqrt",padx=24,pady=10,bg='#b8b894',fg='black',command=button_sqrt)
 button_log=Button(root,text="log",padx=25,pady=10,bg='#b8b894',fg='black',command=button_log)
 
